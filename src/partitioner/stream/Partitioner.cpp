@@ -209,8 +209,8 @@ partitionedEdge Partitioner::fennelPartitioning(std::pair<int, int> edge) {
  * Expect a space seperated pair of vertexts representing an edge in the graph.
  **/
 std::pair<long, long> Partitioner::deserialize(std::string data) {
-    std::vector<std::string> v = Partition::_split(data, ' ');
-    std::cout << "Vertext 1 = " << stoi(v[0]) << std::endl;
-    std::cout << "Vertext 2 = " << stoi(v[1]) << std::endl;
+    std::vector<std::string> v = JasmineGraphIncrementalStore::_split(data, ' ');
+    // std::cout << "Vertext 1 = " << stoi(v[0]) << std::endl;
+    // std::cout << "Vertext 2 = " << stoi(v[1]) << std::endl;
     return {stoi(v[0]), stoi(v[1])};
 }
